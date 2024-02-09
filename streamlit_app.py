@@ -37,8 +37,8 @@ try:
    else:
       back_from_function = get_fruityvice_data(fruit_choice)
       streamlit.dataframe(back_from_function)   
-   except URLError as e:
-      streamlit.error()
+  # except URLError as e:
+  # streamlit.error()
 
 # Allow the enduser to add a fruit to the list
 add_my_fruit = streamlit.text_input('What fruit would you like to add?', 'Jackfruit')
